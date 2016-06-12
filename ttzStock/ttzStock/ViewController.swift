@@ -13,15 +13,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let code = "399001"
+        let ktype = "30"
         
         let session = NSURLSession.sharedSession()
-        let request = NSURLRequest(URL: NSURL(string: "http://172.30.8.82:8080/stock")!)
+        let request = NSURLRequest(URL: NSURL(string: "http://172.30.8.82:8080/stock?code="+code+"&ktype="+ktype)!)
         let task = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
 
-            
             if let jsonData = data {
                     let jsonDict = try? NSJSONSerialization.JSONObjectWithData(jsonData, options: .MutableContainers)
-                    print("D = " + String(jsonDict!.valueForKey("D")))
+               
+                    print(jsonDict)
+            
             }
             
         })
