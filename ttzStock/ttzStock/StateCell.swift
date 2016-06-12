@@ -10,6 +10,7 @@ import UIKit
 
 class StateCell: UITableViewCell {
 
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

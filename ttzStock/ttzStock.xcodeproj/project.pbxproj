@@ -14,6 +14,9 @@
 		F952B0081D0D437600E5898B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F952B0061D0D437600E5898B /* LaunchScreen.storyboard */; };
 		F952B0111D0D442200E5898B /* StateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952B00F1D0D442200E5898B /* StateCell.swift */; };
 		F952B0121D0D442200E5898B /* StateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F952B0101D0D442200E5898B /* StateCell.xib */; };
+		F952B0141D0D5E8E00E5898B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952B0131D0D5E8E00E5898B /* HomeViewController.swift */; };
+		F952B0161D0D5F0400E5898B /* HomeStockInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952B0151D0D5F0400E5898B /* HomeStockInfoCell.swift */; };
+		F952B01B1D0D63CD00E5898B /* HomeStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952B01A1D0D63CD00E5898B /* HomeStock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		F952B0091D0D437600E5898B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F952B00F1D0D442200E5898B /* StateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateCell.swift; sourceTree = "<group>"; };
 		F952B0101D0D442200E5898B /* StateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StateCell.xib; sourceTree = "<group>"; };
+		F952B0131D0D5E8E00E5898B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F952B0151D0D5F0400E5898B /* HomeStockInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeStockInfoCell.swift; sourceTree = "<group>"; };
+		F952B01A1D0D63CD00E5898B /* HomeStock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeStock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +64,10 @@
 		F952AFFC1D0D437600E5898B /* ttzStock */ = {
 			isa = PBXGroup;
 			children = (
+				F952B0171D0D630700E5898B /* Controller */,
+				F952B0191D0D63AC00E5898B /* Model */,
+				F952B0181D0D631700E5898B /* View */,
 				F952AFFD1D0D437600E5898B /* AppDelegate.swift */,
-				F952AFFF1D0D437600E5898B /* ViewController.swift */,
 				F952B00F1D0D442200E5898B /* StateCell.swift */,
 				F952B0101D0D442200E5898B /* StateCell.xib */,
 				F952B0011D0D437600E5898B /* Main.storyboard */,
@@ -68,6 +76,31 @@
 				F952B0091D0D437600E5898B /* Info.plist */,
 			);
 			path = ttzStock;
+			sourceTree = "<group>";
+		};
+		F952B0171D0D630700E5898B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F952B0131D0D5E8E00E5898B /* HomeViewController.swift */,
+				F952AFFF1D0D437600E5898B /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F952B0181D0D631700E5898B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F952B0151D0D5F0400E5898B /* HomeStockInfoCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F952B0191D0D63AC00E5898B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F952B01A1D0D63CD00E5898B /* HomeStock.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F952B0001D0D437600E5898B /* ViewController.swift in Sources */,
+				F952B0161D0D5F0400E5898B /* HomeStockInfoCell.swift in Sources */,
 				F952B0111D0D442200E5898B /* StateCell.swift in Sources */,
 				F952AFFE1D0D437600E5898B /* AppDelegate.swift in Sources */,
+				F952B0141D0D5E8E00E5898B /* HomeViewController.swift in Sources */,
+				F952B01B1D0D63CD00E5898B /* HomeStock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +330,7 @@
 				F952B00E1D0D437600E5898B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

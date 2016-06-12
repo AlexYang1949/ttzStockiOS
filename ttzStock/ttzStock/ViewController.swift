@@ -22,9 +22,7 @@ class ViewController: UIViewController {
 
             if let jsonData = data {
                     let jsonDict = try? NSJSONSerialization.JSONObjectWithData(jsonData, options: .MutableContainers)
-               
                     print(jsonDict)
-            
             }
             
         })
